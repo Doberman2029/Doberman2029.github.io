@@ -30,6 +30,20 @@ function App() {
         >
           test open
         </button>
+        <button onClick={() => WebApp.showAlert(`Some text`)}>
+          Show Alert
+        </button>
+        <button
+          onClick={() => {
+            WebApp.BackButton.show();
+            WebApp.BackButton.onClick(() => {
+              WebApp.BackButton.hide();
+              WebApp.headerColor = "#9FF";
+            });
+          }}
+        >
+          Show back
+        </button>
       </div>
     </>
   );
