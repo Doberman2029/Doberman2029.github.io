@@ -21,7 +21,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count123 is {count}
+          count1 is {count}
         </button>
       </div>
       {/* Here we add our button with alert callback */}
