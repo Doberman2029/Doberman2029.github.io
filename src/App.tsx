@@ -5,7 +5,12 @@ import WebApp from "@twa-dev/sdk";
 
 function App() {
   useEffect(() => {
-    WebApp.SettingsButton.show();
+    WebApp.MainButton.setParams({
+      text_color: "#C3C3",
+      text: "Custom text",
+      is_active: true,
+      is_visible: true,
+    });
     WebApp.headerColor = "#FF3232";
   });
 
