@@ -23,8 +23,12 @@ function App() {
         >
           test open
         </button>
-        <button onClick={() => WebApp.showAlert(`Some text`)}>
-          Show Alert
+        <button
+          onClick={() =>
+            WebApp.showPopup({ title: `Some title text`, message: "test" })
+          }
+        >
+          Show Popup
         </button>
         <button
           onClick={() => {
