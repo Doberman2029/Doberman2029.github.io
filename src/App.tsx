@@ -5,7 +5,7 @@ import WebApp from "@twa-dev/sdk";
 
 function App() {
   useEffect(() => {
-    WebApp.headerColor = "#FF3232";
+    WebApp.SettingsButton.hide();
   });
 
   return (
