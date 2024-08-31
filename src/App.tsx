@@ -4,6 +4,8 @@ import "./App.css";
 import WebApp from "@twa-dev/sdk";
 
 function App() {
+  const tg = (window as any).Telegram?.WebApp || {};
+
   useEffect(() => {
     WebApp.headerColor = "#933323";
   });
@@ -11,6 +13,7 @@ function App() {
   return (
     <>
       <div>
+        {JSON.stringify(tg)}
         <button onClick={() => WebApp.showAlert(`Some text`)}>
           Show Alert
         </button>
